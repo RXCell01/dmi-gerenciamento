@@ -1,6 +1,12 @@
-# dmi-gerenciamento
+# DMI Gerenciamento (v2)
 
-Projeto React (Vite) - Painel de Meta de Lucro para DMI Gerenciamento.
+Painel de Meta de Lucro - Vite + React (pronto para Vercel)
+
+## Novidades na v2
+- Meta ajustada para R$ 25.000,00
+- Exibe também Faturamento total (soma das saídas) e Investimento total (soma das entradas)
+- Relatórios mensais: selecione mês/ano para ver totais e tabela filtrada
+- Export CSV para todo o histórico ou somente o mês filtrado
 
 ## Como rodar localmente
 
@@ -16,8 +22,11 @@ Projeto React (Vite) - Painel de Meta de Lucro para DMI Gerenciamento.
 
 ## Deploy na Vercel
 - Crie um repositório no GitHub com estes arquivos e conecte na Vercel.
-- A Vercel detecta automaticamente o build com `vite` e publica o site.
+- Em **Build & Development Settings** garanta:
+  - Framework Preset: **Vite**
+  - Build Command: `npm run build`
+  - Output Directory: `dist`
 
 ## Nota
 - O app salva os dados no `localStorage` do navegador.
-- Para exportar os registros, use o botão "Exportar CSV".
+- Para exportar os registros, use o botão "Exportar CSV (todas)" ou "Exportar CSV (mês)".
